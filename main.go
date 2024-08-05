@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"latihan_go/coba"
+	"latihan_go/test"
 )
 
 // init function
@@ -76,8 +78,8 @@ func main() {
 	//loop test
 	fmt.Println("===================================")
 	fmt.Println("Looping")
-	for i := 0; i < 100000; i++ {
-		for j := 0; j < 100000; j++ {
+	for i := 0; i < 1000; i++ {
+		for j := 0; j < 1000; j++ {
 			// fmt.Println(i, j)
 		}
 	}
@@ -127,6 +129,10 @@ func main() {
 	fmt.Println("user name : ", user.Name)
 	fmt.Println("user email : ", user.Email)
 	fmt.Println("user password : ", user.Pass)
+
+	// import variable from another package
+	fmt.Println(test.ExportedVariable)
+	fmt.Println(coba.ExportedVariable)
 
 	// fmt.Println(user.Id, user.Name, user.Email, user.Pass)
 }
